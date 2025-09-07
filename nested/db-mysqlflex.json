@@ -43,7 +43,7 @@
       {
         "type": "Microsoft.DBforMySQL/flexibleServers",
         "apiVersion": "2021-05-01",
-        "location": "[parameters('moodleCommon').location]",
+        "location": "southindia",
         "name": "[parameters('moodleCommon').serverName]",
         "sku": {
           "name": "[parameters('moodleCommon').mysqlflexSkuName]",
@@ -90,7 +90,7 @@
         "dependsOn": [
             "[concat('Microsoft.DBforMySQL/flexibleservers/', parameters('moodleCommon').serverName)]"
         ],
-        "location": "[parameters('moodleCommon').location]",
+        "location": "southindia",
         "properties": {
             "startIpAddress": "[parameters('lbPubIp')]",
             "endIpAddress": "[parameters('lbPubIp')]"
@@ -104,7 +104,7 @@
         "dependsOn": [
             "[concat('Microsoft.DBforMySQL/flexibleservers/', parameters('moodleCommon').serverName)]"
         ],
-        "location": "[parameters('moodleCommon').location]",
+        "location": "southindia",
         "properties": {
             "startIpAddress": "[parameters('lbOut001PubIp')]",
             "endIpAddress": "[parameters('lbOut001PubIp')]"
@@ -118,7 +118,7 @@
         "dependsOn": [
             "[concat('Microsoft.DBforMySQL/flexibleservers/', parameters('moodleCommon').serverName)]"
         ],
-        "location": "[parameters('moodleCommon').location]",
+        "location": "southindia",
         "properties": {
             "startIpAddress": "[parameters('lbOut002PubIp')]",
             "endIpAddress": "[parameters('lbOut002PubIp')]"
@@ -132,7 +132,7 @@
         "dependsOn": [
             "[concat('Microsoft.DBforMySQL/flexibleservers/', parameters('moodleCommon').serverName)]"
         ],
-        "location": "[parameters('moodleCommon').location]",
+        "location": "southindia",
         "properties": {
             "startIpAddress": "[parameters('ctlrPubIp')]",
             "endIpAddress": "[parameters('ctlrPubIp')]"
