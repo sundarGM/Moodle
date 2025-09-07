@@ -105,7 +105,7 @@
             "dependsOn": [
                 "[concat('Microsoft.Network/networkInterfaces/', parameters('moodleCommon').ctlrNicName)]"
             ],
-            "location": "[parameters('moodleCommon').location]",
+            "location": "Central India",
             "name": "[parameters('moodleCommon').ctlrVmName]",
             "properties": {
                 "hardwareProfile": {
